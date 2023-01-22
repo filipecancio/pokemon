@@ -1,4 +1,4 @@
-# pokemon Detail
+# Pokemon Detail
 
 ## References
 Using [PokeAPI](https://pokeapi.co/) to get pokemon data.
