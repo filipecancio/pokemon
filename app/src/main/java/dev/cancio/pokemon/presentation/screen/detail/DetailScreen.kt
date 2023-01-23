@@ -16,6 +16,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import dev.cancio.pokemon.ui.components.atom.CompatibleImage
 import dev.cancio.pokemon.R
+import dev.cancio.pokemon.ui.components.atom.InfoTag
+import dev.cancio.pokemon.ui.components.molecule.BottomBar
 import dev.cancio.pokemon.ui.components.molecule.TopBar
 
 
@@ -70,10 +72,25 @@ fun DetailScreen() = Column(
                 vertical = 16.dp
             )
     ) {
-        Row() {
-            Text(text = "8.5 KG")
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            InfoTag(value = "8.5")
+            InfoTag(value = "8.5")
+            InfoTag(value = "8.5")
+        }
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            InfoTag(value = "8.5")
+            InfoTag(value = "8.5")
         }
     }
+
+    BottomBar()
+    BottomBar()
 }
 
 
